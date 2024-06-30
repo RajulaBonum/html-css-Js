@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>CSS- Selectors</title>
+
+	<!-- Css styling -->
+	<style type="text/css">
+		h1 {
+			font-family: sans-serif;
+			text-align: center;
+			color: green;
+			border-bottom: 1px solid blueviolet;
+		}
+		.container-1 {
+			padding: 30px;
+			border: 2px solid black;
+			margin: 40px 20px;
+		}
+
+		/* Elements with more than one class
+			Styling a class with a different calss
+		 */
+		.notebox {
+			font-family: sans-serif;
+			font-size: 2em;
+			padding: 5px;
+			border: 4px solid gray;
+			margin: 10px 0;
+		}
+		.notebox.warning {
+			border-color: orange;
+		}
+		.notebox.danger {
+			border-color: red;
+		}
+		.notebox.success {
+			border-color: green;
+		}
+
+		/* ID selectors */
+		#one {
+			background-color: yellowgreen;
+			padding: 50px;
+			margin: 20px;
+		}
+
+		h1#heading {
+			color: rebeccapurple;
+		}
+
+		/* next sibling combinator */
+		h1 + p {
+			padding: 50px;
+			margin: 20px;
+		}
+	</style>
+</head>
+<body>
+	<h1>CSS - Selectors</h1>
+	<div class="container-1">
+		<div class="notebox">This is an informational note!</div>
+		<div class="notebox warning">This is a warning note!</div>
+		<div class="notebox danger">This is a danger note!</div>
+		<div class="notebox success">This is a success note!</div>
+	</div>
+	
+	<h1 id="heading">ID selector</h1>
+	<p>Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi welsh onion daikon amaranth tatsoi tomatillo
+    melon azuki bean garlic.</p>
+
+	<p id="one">Gumbo beet greens corn soko <strong>endive</strong> gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard
+    greens dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini.</p>
+</body>
+</html>
