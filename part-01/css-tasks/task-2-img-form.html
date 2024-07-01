@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Images and forms 1: covering the box with an image</title>
+
+    <!-- internal css styling -->
+    <style>
+      body {
+        background-color: #fff;
+        color: #333;
+        font:
+          1.2em / 1.5 Helvetica Neue,
+          Helvetica,
+          Arial,
+          sans-serif;
+        padding: 1em;
+        margin: 0;
+      }
+      h1 {
+        border-bottom: 3px dotted black;
+      }
+      .container {
+        padding: 20px;
+        border: 3px solid blue;
+        margin: 20px;
+      }
+
+      .box {
+        border: 5px solid #000;
+        width: 400px;
+        height: 200px;
+      }
+      /* Task 1 
+      Sizing the image to fit into the parent box container
+      The % value is relative to the parent */
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      /* Task 2 */
+      /* Ensure the form field and button use the same text size as the rest of the form */
+      .myform input[type="search"],
+      .myform input[type="submit"] {
+        font-size: inherit;
+        padding: 10px;
+      }
+
+      /* Style the submit button */
+      .myform input[type="submit"] {
+        background-color: rebeccapurple;
+        color: whitesmoke;
+        border: 0;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Task 1- Resizing image to fit the container</h1>
+      <div class="box">
+        <img src="images/balloons.jpg" alt="balloons" />
+      </div>
+    </div>
+
+    <!-- Task 2 -->
+    <div class="container">
+      <h1>Task - Styling form elements</h1>
+      <form method="post" action="" class="myform">
+        <div>
+          <label for="fldSearch">Keywords</label>
+          <input type="search" id="fldSearch" name="keywords">
+          <input type="submit" name="btnSubmit" value="Search">
+        </div>
+      </form>
+    </div>
+    
+  </body>
+</html>
