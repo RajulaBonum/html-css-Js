@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Flexbox Tasks</title>
+
+	<!-- Internal styles sheet -->
+	<style type="text/css">
+		/* General css styles */
+		body {
+        	margin: 0;
+        }
+
+      	html {
+        	font-family: 'Helvetica neue', Arial, 'sans serif';
+        	font-size: 10px;
+        	background-color: #ccc;
+        }
+
+        /* Task 0 */
+
+        nav {
+        	border: 1px solid black;
+        	padding: 20px;
+        	margin: 10px;
+        }
+        a {
+        	text-decoration: none;
+        	border: 1px solid black;
+        	border-radius: 0.5em;
+        	box-shadow: 4px 4px 4px rgb(0, 0, 0, 0.5);
+        	line-height: 1.5;
+        	font-size: 2em;
+        	padding: 5px 10px;
+        	background-color: rebeccapurple;
+        	color: white;
+        }
+
+        ul li {
+        	list-style-type: none;
+        	margin: 10px;
+        }
+
+        nav ul {
+        	border: 1px solid black;
+        	border-radius: 3px;
+        	display: flex;
+        	flex-flow: row wrap;
+        	align-items: center;
+        	justify-content: space-around;
+        }
+
+        /* Task 2 */
+        div {
+        	border: 1px solid black;
+        	padding: 20px;
+        	margin: 10px;
+        }
+
+        .list2 {
+        	display: flex;
+        	justify-content: space-around;
+        	border: 1px solid black;
+        }
+
+        .list2 li {
+        	border: 2px solid blue;
+        	border-radius: 4px;
+        	padding: 20px;
+        	background-color: lightblue;
+        	color: white;
+        	flex: 1;
+        	font-size: 2em;
+        }
+	</style>
+</head>
+<body>
+	<nav>
+		<h1>Task 1</h1>
+		<h2>A simple flex navigation bar</h2>
+		 <ul>
+		    <li><a href="/">Home</a></li>
+		    <li><a href="/about">About Us</a></li>
+		    <li><a href="/products">Our Products</a></li>
+		    <li><a href="/contact">Contact Us</a></li>
+		 </ul>
+	</nav>
+
+	<!-- Task 2 -->
+	<div>
+		<h1>Task 2</h1>
+		<h2>Arranging content with flexbox</h2>
+		<ul class="list2">
+			<li>I am small</li>
+			<li>I have more content than the very small item.</li>
+			<li>I have lots of content. So much content that I don't know where it is all going to go. I'm glad that CSS is pretty good at dealing with situations where we end up with more words than expected!</li>
+		</ul>
+	</div>
+</body>
+</html>
