@@ -1,0 +1,5 @@
+This are base css projects for my projects directory:
+
+	1. Login Form
+	2. Registration Form
+	3. Carousel Sliders

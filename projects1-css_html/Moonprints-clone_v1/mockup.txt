@@ -1,0 +1,29 @@
+Sections of the Webpage:
+
+	1. Header
+	2. Navigation
+	/* Heros section to be added later on- To have a carosel */
+	3. Main
+		Home:
+			-Shop_section
+			-Saving_section
+			-Why_section
+			-Gift_section
+			-Contact_section
+			-Review_section
+
+		Shop:
+			-Shop_section
+
+		Why Us:
+			-Why_section
+
+		Testimonial
+			-Review_section
+
+		Contact Us:
+			-Contact_section
+
+	4. Footer
+
+

@@ -1,0 +1,37 @@
+This directory will contain some of the projects I will do in regards to improving my understanding of HTML and CSS.
+
+The will include:
+	1. Create an animation
+	2. Build a form
+	3. Make responsive blog websites.
+	4. Portfolio Website
+	5. Landing Page
+	6. Pure CSS sidebar toggle menu
+	7. Pure CSS select dropdown
+	8. Job application form page
+	9. Restaurant menu
+	10. Restaurant Website
+	11. Parallax website
+	12. Photography website
+	13. Music store website
+
+Tribute Pages:
+- Hobby page
+- Favourite food page
+- Travel destination
+- Home town
+
+Survey Pages:
+- Contact forms
+- Login forms
+- Sign up forms
+- Survey forms
+
+
+Basic HTML & CSS website layout
+- Header: <header>
+- Navigation: <nav>
+- Main section: <main>
+- Content: <article>
+- Sidebar: <aside>
+- Footer: <footer>
