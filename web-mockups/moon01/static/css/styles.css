@@ -1,0 +1,227 @@
+/* General sytling */
+body {
+	box-sizing: border-box;
+	font-size: 1.2rem;
+	padding: 1em;
+	font-family: "Times New Roman", Times, serif, Arial, Helvetica, sans-serif;
+}
+
+image {
+	box-sizing: inherit;
+	max-width: 100%;
+}
+
+.nav {
+	margin-bottom: 2em;
+}
+.nav ul {
+	list-style: none;
+	padding: 1em;
+	border-radius: 1em 1em 0 0;
+	text-align: center;
+	background-color: #FFE4B5;
+}
+
+.nav li {
+	padding: 0.5em;
+}
+
+.nav a {
+	text-decoration: none;
+	color: gray;
+}
+
+/* Shop section */
+.shop-sec {
+	text-align: center;
+	margin-bottom: 2em;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.shop-card {
+	position: relative;
+	margin-bottom: 2.3em;
+	background-color: #F0F8FF;
+}
+
+.item-img {
+	padding: 0 6em;
+	margin-bottom: 2em;
+}
+
+.item-img img {
+	margin: 3em 0;
+	max-width: 100%;
+}
+
+.item-cont {
+	padding: 1em;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.item-brg {
+	border: 1px solid gray;
+	padding: 1em;
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin-left: 1em;
+	margin-top: 1em;
+	border-radius: 1.5em;
+}
+
+.shop-btn {
+	border: 2px solid gray;
+	padding: 0.5em 1em;
+	margin-top: 1.7em;
+	border-radius: 2em;
+	background-color: #FF1493;
+	color: whitesmoke;
+	box-shadow: 2px 2px 2px black;
+	max-width: 50%;
+}
+
+/* Gift section */
+.gift-sec {
+	border: 1px solid black;
+	margin-bottom: 2em;
+	border-radius: 1em;
+	background-color: #4B0082;
+	color: whitesmoke;
+	font-size: ;
+}
+
+.gift-img {
+	margin-bottom: 2em;
+}
+.gift-img img {
+	max-width: 100%;
+}
+
+.gift-cont {
+	padding: 1em;
+	margin-bottom: 1em;
+}
+
+.gift-btn {
+	padding: 1em;
+	display: flex;
+}
+
+.gift-btn a {
+	text-decoration: none;
+	padding: 0.6em;
+	margin-right: 1em;
+	color: whitesmoke;
+	background-color: #BA55D3;
+}
+
+#g-btn1 {
+	background-color: whitesmoke;
+	color: black;
+}
+
+#g-btn2 {
+	background-color: #9400D3;
+	color: whitesmoke;
+}
+
+/* Why section */
+.why-sec {
+	text-align: center;
+	margin-bottom: 2em;
+}
+
+.why-card {
+	background-color: #DCDCDC;
+	padding: 1em;
+	margin-bottom: 2em;
+	font-size: ;
+}
+
+.why-img {
+	height: 4em;
+}
+
+.why-img img {
+	max-height: 100%;
+}
+
+/* Testimonials section */
+.tes-sec {
+	margin-bottom: 2em;
+	text-align: center;
+}
+
+.tes-card {
+	border: 1px solid black;
+	text-align: left;
+	padding: 1em;
+	font-size: ;
+}
+
+/* Footer section */
+footer {
+	border: 1px solid black;
+	padding: 2em;
+	background-color: #000000;
+	color: whitesmoke;
+	text-align: center;
+}
+
+footer > div {
+	padding: 1em;
+	margin-bottom: 0.5em;
+}
+
+.f1 {
+	display: flex;
+	justify-content: space-evenly;
+	text-align: center;
+}
+
+.f3 div {
+	padding: 0.5em;
+}
+
+/* Media Queries */
+@media screen and (min-width:40em) {
+
+	.nav ul {
+		display: flex;
+		justify-content: space-evenly;
+		align-items: center;
+		padding: 0.2;
+		border-radius: 1em;
+	}
+	.shop-sec > div {
+		padding: 2em;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 10px;
+	}
+
+	.shop-card {
+		grid-column: auto;
+	}
+
+	.why-sec > div {
+		padding: 2em;
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 20px;
+	}
+
+	.why-card {
+		grid-column: span 1;
+	}
+
+	.tes-sec {
+		padding: 2em;
+	}
+}
