@@ -1,0 +1,188 @@
+html {
+	font-family: "Times New Roman", Times, serif, Arial, Helvetica, sans-serif;
+}
+
+body {
+	font-size: 1.2rem;
+	box-sizing: border-box;
+}
+
+img {
+	max-width: 100%;
+}
+
+/* Header and Navigation */
+
+.logo {
+	font-size: 70%;
+	font-style: italic;
+}
+nav {
+	margin-bottom: 2em;
+	background-color: black;
+}
+nav ul {
+	list-style: none;
+	border: 1px solid grey;
+	padding: 2em;
+}
+
+nav li {
+	padding: 0.5em;
+	margin-bottom: 0.5em;
+	border-bottom: 0.5px solid
+}
+
+nav a {
+	text-decoration: none;
+	color: whitesmoke;
+}
+
+/* T-section */
+main {
+	padding: 1em;
+	margin-bottom: 2em;
+}
+
+.item-box {
+	border: 1px solid grey;
+	padding: 1em;
+	margin-bottom: 2em;
+}
+
+.item-card {
+	border: 2px solid red;
+	padding: 0;
+	margin-bottom: 1.5em;
+	box-shadow: 5px 5px 2px black;
+	position: relative;
+}
+
+.item-img {
+	padding: 0.5em;
+	border: 1px solid grey;
+	height: 50vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: grey;
+}
+
+.item-img img {
+	max-height: 100%;
+}
+
+.item-cont {
+	height: inherit;
+	padding: 1em;
+}
+
+.order {
+	padding: 1em 0;
+	position: absolute;
+	top: 0.5em;
+	right: 0.5em;
+}
+
+.order a {
+	text-decoration: none;
+	color: whitesmoke;
+	background-color: orange;
+	padding: 0.5em;
+	border-radius: 50%;
+}
+.shop-more {
+	padding: 1em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.shop-more a {
+	text-decoration: none;
+	color: whitesmoke;
+	padding: 0.7em 3em;
+	background-color: #800000;
+	box-shadow: 5px 5px 2px black;
+	box-shadow: 5px 5px 2px black;
+}
+
+/* Footer section */
+footer {
+	border: 1px solid grey;
+	padding: 1em;
+	color: whitesmoke;
+	background-color: black;
+}
+
+footer > div {
+	padding: 1em;
+}
+
+footer > h2 {
+	text-align: center;
+}
+
+.quick-lnks ul {
+	list-style: none;
+	padding: 0;
+}
+
+.quick-lnks li {
+	padding: 0.5em;
+}
+
+.quick-lnks a {
+	text-decoration: none;
+	color: whitesmoke;
+}
+
+.sign {
+	text-align: center;
+}
+
+/* Media queries */
+/* --- Medium screens -- */
+@media screen and (min-width: 40em) {
+	.nav ul {
+		display: flex;
+		justify-content: space-around;
+		padding: 1em;
+	}
+
+	.nav li {
+		padding: 0;
+	}
+
+	.item-box {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap:  2em;
+	}
+
+	.item-card {
+		grid-column: auto;
+	}
+}
+
+/* --- Large screens -- */
+@media screen and (min-width: 70em) {
+	.item-box {
+		display: grid;
+		grid-template-columns: repeat(12, 1fr);
+		gap:  2em;
+	}
+
+	.item-card {
+		grid-column: span 3;
+	}
+
+	.footer-box {
+		display: flex;
+		justify-content: space-around;
+	}
+
+	.quick-lnks,
+	.contact-lst {
+	}
+}

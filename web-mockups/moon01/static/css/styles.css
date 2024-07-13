@@ -45,6 +45,9 @@ image {
 	position: relative;
 	margin-bottom: 2.3em;
 	background-color: #F0F8FF;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 }
 
 .item-img {
@@ -62,6 +65,7 @@ image {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	background-color: orange;
 }
 
 .item-brg {
@@ -76,14 +80,21 @@ image {
 }
 
 .shop-btn {
-	border: 2px solid gray;
-	padding: 0.5em 1em;
+	border: 2px solid re;
 	margin-top: 1.7em;
-	border-radius: 2em;
-	background-color: #FF1493;
 	color: whitesmoke;
+	display: flex;
+	justify-content: space-between;
+}
+
+.shop-btn a {
+	flex: 1;
+	text-decoration: none;
+	color: whitesmoke;
+	background-color: #FF1493;
 	box-shadow: 2px 2px 2px black;
-	max-width: 50%;
+	border-radius: 2em;
+	padding: 0.5em;
 }
 
 /* Gift section */
@@ -192,6 +203,12 @@ footer > div {
 /* Media Queries */
 @media screen and (min-width:40em) {
 
+	div > .nav {
+		position: sticky;
+		top: 0;
+		left: 0;
+	}
+
 	.nav ul {
 		display: flex;
 		justify-content: space-evenly;
@@ -204,6 +221,16 @@ footer > div {
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
 		gap: 10px;
+	}
+
+	.gift-img {
+		height: 60vh;
+		display: flex;
+		justify-content: center;
+	}
+
+	.gift-img img {
+		height: inherit;
 	}
 
 	.shop-card {
@@ -223,5 +250,59 @@ footer > div {
 
 	.tes-sec {
 		padding: 2em;
+	}
+}
+
+/* Larger screens */
+@media screen and (min-width: 70em) {
+	.shop-sec > div {
+		padding: 2em;
+		display: grid;
+		grid-template-columns: repeat(12, 1fr);
+		gap: 10px;
+	}
+
+	.shop-card {
+		grid-column: span 3;
+	}
+
+	.gift-sec > div {
+		display: flex;
+		align-items: center;
+		justify-content: space-evenly;
+		height: 70vh;
+		padding: 2em;
+	}
+
+	.gift-img {
+		flex: 2;
+		height: inherit;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.gift-img img {
+		height: inherit;
+
+	}
+
+	.g1 {
+		flex: 1;
+	}
+
+	.why-sec > div {
+		padding: 2em;
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 20px;
+	}
+
+	.why-card {
+		grid-column: span 1;
+	}
+
+	.tes-sec {
+		padding: 5em 10em;
 	}
 }
