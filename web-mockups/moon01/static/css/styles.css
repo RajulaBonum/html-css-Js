@@ -28,7 +28,13 @@ image {
 
 .nav a {
 	text-decoration: none;
-	color: gray;
+	color: yellow;
+}
+
+.nav a:hover {
+	border: 1px solid whitesmoke;
+	border-radius: 3px;
+	background-color: yellow;
 }
 
 /* Shop section */

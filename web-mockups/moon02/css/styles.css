@@ -5,6 +5,7 @@ html {
 body {
 	font-size: 1.2rem;
 	box-sizing: border-box;
+	position: relative;
 }
 
 img {
@@ -33,9 +34,19 @@ nav li {
 	border-bottom: 0.5px solid
 }
 
+nav li svg {
+	fill: whitesmoke;
+}
 nav a {
 	text-decoration: none;
 	color: whitesmoke;
+	padding: 0.3em;
+}
+
+nav a:hover {
+	border: 1px solid orange;
+	border-radius: 1em;
+	background-color: orange;
 }
 
 /* T-section */
@@ -45,27 +56,32 @@ main {
 }
 
 .item-box {
-	border: 1px solid grey;
 	padding: 1em;
 	margin-bottom: 2em;
 }
 
 .item-card {
-	border: 2px solid red;
+	border: 2px solid black;
 	padding: 0;
 	margin-bottom: 1.5em;
 	box-shadow: 5px 5px 2px black;
 	position: relative;
+	background-color: grey;
+	color: whitesmoke;
+	border-radius: 0.5em;
+}
+
+.item-card:hover {
+	border: 4px solid black;
+	box-shadow: 5px 5px 4px black;
 }
 
 .item-img {
-	padding: 0.5em;
-	border: 1px solid grey;
-	height: 50vh;
+	padding: 0 0.5em;
+	height: 40vh;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background-color: grey;
 }
 
 .item-img img {
@@ -74,7 +90,7 @@ main {
 
 .item-cont {
 	height: inherit;
-	padding: 1em;
+	padding: 0.3em;
 }
 
 .order {
@@ -107,6 +123,55 @@ main {
 	box-shadow: 5px 5px 2px black;
 }
 
+/* Testimonial Secion */
+.testimonial {
+	padding: 2em;
+	text-align: center;
+}
+
+.t-hr {
+	padding: 0 7em 0.7em 7em;
+}
+
+.t-hr hr {
+	border: 2px inset slategray;
+	border-radius: 1em;
+}
+
+.t-btns img {
+	width: 10%;
+	margin: 1em;
+}
+
+.t-card {
+	border: 1px solid grey;
+	padding: 0.5em;
+	background-color: slategrey;
+	position: relative;
+	color: whitesmoke;
+	border-radius: 1em;
+	box-shadow: 0.7em 0.7em 0.5em gray;
+	border: 4px outset slategray;
+	margin-bottom: 2em;
+}
+
+.t-card p {
+	font-style: italic;
+	font-weight: bold;
+}
+
+.t-bar {
+	position: absolute;
+	padding: 0.7em;
+	top: 0;
+	right: 0;
+}
+
+.t-bar img {
+	width: 2em;
+	background-color: wheat;
+
+}
 /* Footer section */
 footer {
 	border: 1px solid grey;
@@ -141,6 +206,32 @@ footer > h2 {
 	text-align: center;
 }
 
+.up-btn {
+	position: fixed;
+	padding: 0.5em;
+	bottom: 1em;
+	right: 1em;
+	background-color: grey;
+	border-radius: 2px;
+}
+
+.up-btn img {
+	width: 1.6em;
+}
+
+.chat-btn {
+	background-color: lawngreen;
+	position: fixed;
+	padding: 0.6em;
+	bottom: 4em;
+	right: 1em;
+	border-radius: 4px;
+}
+
+.chat-btn img {
+	width: 1.4em;
+}
+
 /* Gift section */
 .gift-box {
 	border: 1px solid grey;
@@ -148,7 +239,7 @@ footer > h2 {
 	padding: 1em;
 	border-radius: 1em;
 	text-align: center;
-	background-color: #990033;
+	background-color: firebrick;
 	color: whitesmoke;
 }
 
@@ -183,6 +274,7 @@ footer > h2 {
 
 .gift-img img {
 	border-radius: 1em;
+	width: 60%;
 }
 
 /* Media queries */
