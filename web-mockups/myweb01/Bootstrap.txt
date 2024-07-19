@@ -1,0 +1,153 @@
+//Bootstrap Notes
+
+	1. Containers
+		- .container (Fixed width)
+		- .container-fluid (Full width)
+		- Container Padding (
+			.pt -top, .pb -bottom)
+		- Border and Color
+		- Responsive containers (sm, md, 
+			lg, xl)
+
+	2. Grid System
+		- Has 12 columns (Scale up)
+		-.col- (extra small devices - screen width less than 576px)
+		- .col-sm- (small devices - screen width equal to or greater than 576px)
+		- .col-md- (medium devices - screen width equal to or greater than 768px)
+		- .col-lg- (large devices - screen width equal to or greater than 992px)
+		- .col-xl- (xlarge devices - screen width equal to or greater than 1200px)
+		- .col-xxl- (xxlarge devices - screen width equal to or greater than 1400px)
+
+	3. h1 to h6 classes
+		-.display-1 to .display-6
+		-.small, .mark, .blockquote, .blockquote-footer, <dl>, <code>, <kbd>, <pre>, .list-unstyled, .list-inline, .text-start, .text-end, .text-center, .text-lowercase, .text-uppecase, .text-decoration-none
+
+	4. Text colors
+		.text-muted, .text-primary, .text-succes, .text-info, .text-warning, .text-danger, .text-secondary, .text-white, .text-dark, .text-body
+
+	5. Background colors
+		.bg-primary, .bg-success, .bg-info, .bg-warning, .bg-danger, .bg-dark, .bg-light
+
+	6. Tables
+		.table .table-striped, .table-bordered, .table-hover, .table-dark, .table-borderless, [Contextual classes], .table-responsive, .table-sm
+
+	7. Images 
+		Image shapes - .rounded, .rounded-circle, .img-thumbnail
+		Aligning Images (float) - .float-start, .float-end
+		Center Image - .mx-auto(margin:auto) .d-block(display block)
+		Responsive Images - .img-fluid(img element)
+
+	8. Jumbotron 
+		- special box introduced in bootstrap 3
+
+	9. Alerts 
+		.alert followed by .alert-success, .alert-info, .alert-warning, .alert, danger, .alert-primary, .alert-secondary, .alert-light, .alert-dark
+		- alert-link
+		- alert closing - .alert-dismissible
+		- animated alerts - .fade, .show
+
+	10. Buttons
+		.btn, .btn-color, .btn-outline-color - can be used on buttons, a, and input elements
+		.btn-lg, .btn-sm, .d-grid, .gap-*, 
+		.active, .disabled
+		.spinner-border spinner-border-sm
+		.btn-group, .btn-group-sm, .btn-group-lg, .btn-group-vertical - to group buttons
+
+	11. Badges
+		.badge with .bg-secondary within a span
+		.rounded-pill
+		- Barge inside an element (use span)
+
+	12. Progess bars
+		.progress (parent), .progress-bar(child),
+		Striped progress Bars - .progress-bar-striped
+		Animated - .progress-bar-animated
+
+	15. Spinners
+		.spinner-border (color with -.text-color), .spinner-grow
+
+	16. Pagation
+		- .pagation to ul, and .page-item to li and .page-link to link inside li
+		- .active, .pagation-lg, .pagation-sm, .breadcrumb, .breadcrumb-item
+
+	17. List group
+
+	18. Cards
+		.card, .card-body, .card-body, .card-footer, .card-title, .card-text, .card-link, .card-img-top, .card-img-bottom
+		- Card image overlay - .card-img-overlay
+
+	19. Dropdowns
+		.dropdown-toggle - data-bs-toggle= dropdown
+		.dropdown, .dropdown-menu, .dropdown-item, .dropdown-driver, dropdown-header, .dropend, .dropstart, .dropup, .dropdown-item-text, 
+
+	20. Collapsible
+		.collapse, .data-bs-toggle='collapse' data-bs-target='id'
+
+		- Accordin 
+			data-bs-parent
+
+	21. Nav Menus
+		- .nav, .nav-item, .nav-link, .flex-column (vertical nav menu), .nav-tabs, .active, .nav-pills, .nav-justified
+		- Dynamic Tabs - .data-toggle="tab" .tab-pane, .fade, .tab-content,
+
+	22. Navigation Bars
+		- .navbar, .navbar-expand-xxl|xl|lg|md|sm(responsive collapsing class), .navbar-nav, .navbar-dark(For white text on links)
+		- Brand and Log - .navbar-brand, .navbar-text
+		- Collapsible navigation bar - .navbar-toggler, data-bs-toggle='collapse', data-bs-targer='#thetargert', .collapse., .navbar-collapse, 
+		- .fixed-top, .fixed-bottom, .sticky-top,
+
+	23. Carousel
+		- .carousel, .slide, data-bs-ride='carousel', .carouse-indicators, data-bs-slide-to='id', .carousel-item, .active, .carousel-inner, .carousel-control-prev, .carousel-control-next, .carousel-caption,
+
+	24. Modal - A pop up window on top of the current page
+
+	25. Tooltip - A smaller pop up window
+
+	26.  Popovers - Similar to tooltips but contain much more information than tooltips.
+
+	27. Toasts - An alert box shown for only a couple of seconds when something happens (i.e when the user clicks a button, submits a form, etc.)
+
+	28. Scrollspy  - Used to automatically update links in a navigation list based on scroll position
+		- data-bs-spy='scroll', data-bs-target='.navbar', data-bs-offset='50'
+
+	29. Offcanvas - similar to a modal but shown when actited and is used a sidebar navigation menu
+
+		- .offcanvas, .offcanvas-start, id, .offcanvas-header, .offcanvas-tittle, 
+
+	30. Utilities
+		-border
+		- float and clearfix
+		- Center align -.mx-auto
+		- width
+		- height
+		- spacing
+		- shadow
+		- vertical align
+		- aspect ratio
+		- visibility
+		- close icon
+		- screenreaders
+		- colors
+		- Bg colors
+
+	31. Dark Mode
+		- data-bs-them='dark' to the html emement
+
+	32. Flex
+		- .d-flex, .flex-row, .flex-row-reverse, .flex-column, .flex-column-reverse, .justify-content-(end, center, between, around), .flex-fill(For equal width), .flex-grow-1, .ms-auto, .me-auto, .flex-wrap, align-content(start, end, center, around, stretch)- effect on multiple rows, .align-items -effect on a single row, .align-self,
+
+	33. Forms
+
+
+	34. Select
+
+	35. Checkboxes and Radio buttons 
+
+	36. Range
+
+	37. Input Groups
+
+	38. Form Validation
+
+	39. Grid System
+		- .row, .col
